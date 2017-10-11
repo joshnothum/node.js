@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Salary Calculator</title>
+    <script src="vendors/jquery-3.2.1.min.js"></script>
+    <script src="scripts/client.js"></script>
+</head>
+
+<body>
+    <h1>Salary Calculator</h1>
+    <form id="employeeForm">
+        First:
+        <input type="text" id="firstName">
+        <br> Last:
+        <input type="text" id="lastName">
+        <br> id:
+        <input type="text" id="empId">
+        <br> Job Title:
+        <input type="text" id="jobTitle">
+        <br> Salary:
+        <input type="text" id="salary">
+        <br>
+        <button type="submit" id="submitBtn">Submit</button>
+    </form>
+    <div>
+        Monthly Cost:
+        <span id="avgMonthlySalary">$0</span>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>id</th>
+                    <th>Job Title</th>
+                    <th>Salary</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="output">
+                <!-- intentionally left blank -->
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
